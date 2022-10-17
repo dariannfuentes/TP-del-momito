@@ -1,0 +1,34 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === true">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+
+
+      <a mat-list-item routerLink="comp1">INICIO</a>
+      <a mat-list-item routerLink="comp2">PRODUCTOS</a>
+      <a mat-list-item routerLink="comp3">ACERCA DE</a>
+      <a mat-list-item routerLink="comp4">INFORMACION</a>
+      
+      
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="warning">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>
+        
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b8a1221-f222-4ae7-bee6-3e66c5cea2ce/d5c5k2a-1a781d58-1ac6-45b9-8a3e-cc6f359ed9ab.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiOGExMjIxLWYyMjItNGFlNy1iZWU2LTNlNjZjNWNlYTJjZVwvZDVjNWsyYS0xYTc4MWQ1OC0xYWM2LTQ1YjktOGEzZS1jYzZmMzU5ZWQ5YWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bOuzm0B_VZSDYqXZdKgun-UlWEycu1fy4_WR91b4euo" width="23%" height="23%%" alt="23%"  > <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b8a1221-f222-4ae7-bee6-3e66c5cea2ce/d5c5k2a-1a781d58-1ac6-45b9-8a3e-cc6f359ed9ab.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiOGExMjIxLWYyMjItNGFlNy1iZWU2LTNlNjZjNWNlYTJjZVwvZDVjNWsyYS0xYTc4MWQ1OC0xYWM2LTQ1YjktOGEzZS1jYzZmMzU5ZWQ5YWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bOuzm0B_VZSDYqXZdKgun-UlWEycu1fy4_WR91b4euo" width="23%" height="23%" alt=""><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b8a1221-f222-4ae7-bee6-3e66c5cea2ce/d5c5k2a-1a781d58-1ac6-45b9-8a3e-cc6f359ed9ab.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiOGExMjIxLWYyMjItNGFlNy1iZWU2LTNlNjZjNWNlYTJjZVwvZDVjNWsyYS0xYTc4MWQ1OC0xYWM2LTQ1YjktOGEzZS1jYzZmMzU5ZWQ5YWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bOuzm0B_VZSDYqXZdKgun-UlWEycu1fy4_WR91b4euo" width="23%" height="23%%" alt="23%"  ><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b8a1221-f222-4ae7-bee6-3e66c5cea2ce/d5c5k2a-1a781d58-1ac6-45b9-8a3e-cc6f359ed9ab.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiOGExMjIxLWYyMjItNGFlNy1iZWU2LTNlNjZjNWNlYTJjZVwvZDVjNWsyYS0xYTc4MWQ1OC0xYWM2LTQ1YjktOGEzZS1jYzZmMzU5ZWQ5YWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bOuzm0B_VZSDYqXZdKgun-UlWEycu1fy4_WR91b4euo" width="23%" height="23%%" alt="23%"  > <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b8a1221-f222-4ae7-bee6-3e66c5cea2ce/d5c5k2a-1a781d58-1ac6-45b9-8a3e-cc6f359ed9ab.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiOGExMjIxLWYyMjItNGFlNy1iZWU2LTNlNjZjNWNlYTJjZVwvZDVjNWsyYS0xYTc4MWQ1OC0xYWM2LTQ1YjktOGEzZS1jYzZmMzU5ZWQ5YWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bOuzm0B_VZSDYqXZdKgun-UlWEycu1fy4_WR91b4euo" width="23%" height="23%%" alt="23%"  >       </span>
+    </mat-toolbar>
+    <ng-component></ng-component>
+  </mat-sidenav-content>
+</mat-sidenav-container>
